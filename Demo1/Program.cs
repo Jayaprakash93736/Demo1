@@ -12,6 +12,7 @@ namespace Demo1
         {
             Console.WriteLine("Hello world");
             Console.WriteLine("Dev");
+            Console.WriteLine("DevFeatureb2");
             Console.ReadLine();
         }
     }
