@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Staging') {
+            steps {
+                echo 'SHello World'
+            }
+        }
+        stage('Rolling') {
+            steps {
+                echo 'S2Hello World'
+            }
+        }
+        stage('Production') {
+            steps {
+                echo 'S3Hello World'
+            }
+        }
+    }
+}
