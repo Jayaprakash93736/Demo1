@@ -5,6 +5,8 @@ pipeline {
         stage('Staging') {
             steps {
                 echo 'SHello World'
+                build 'TestStage'
+                archiveArtifacts artifacts: 'archiveArtifacts artifacts: \'**/*.dll\'', followSymlinks: false
             }
         }
         stage('Rolling') {
